@@ -25,6 +25,7 @@
     #include <stdio.h>
     
 #include <math.h>   // Для математических функций
+
 #include <locale.h> // Для русского языка в консоли
 
 int main() {

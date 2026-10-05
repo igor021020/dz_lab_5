@@ -10,7 +10,6 @@
 
 ### Блок-схема
 
-```mermaid
 graph TD
     Start((Начало)) --> Init[/Ввод x, y, z/]
     Init --> Calc1[Числитель]

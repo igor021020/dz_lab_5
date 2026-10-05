@@ -26,9 +26,6 @@
     Output --> End((Конец))
 
     #2. Реализация программы
-    
-    
-    
     #include <stdio.h>
 #include <math.h>
 #include <locale.h> 

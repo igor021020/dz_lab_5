@@ -21,11 +21,12 @@
     Output --> End((Конец))
 
 #2. Реализация программы
+```c
 #include <stdio.h>
 #include <math.h>
 #include <locale.h>
 
-void main() {
+int main() {
 
     setlocale(LC_ALL, "RUS");
 

@@ -22,9 +22,10 @@
     Output --> End((Конец))
 
     #2. Реализация программы
-    #include <stdio.h>    
+#include <stdio.h>
 #include <math.h>   // Для математических функций
 #include <locale.h> // Для русского языка в консоли
+
 int main() {
     // Настройка русского языка в консоли (для Windows)
     setlocale(LC_ALL, "RUS");

@@ -26,49 +26,29 @@
     Output --> End((Конец))
 
     #2. Реализация программы
+    
+    
+    
     #include <stdio.h>
-#include <math.h>   // Для математических функций
-#include <locale.h> // Для русского языка в консоли
-
+#include <math.h>
+#include <locale.h> 
 int main() {
-    // Настройка русского языка в консоли (для Windows)
     setlocale(LC_ALL, "RUS");
-
-    // Исходные данные
     double x = 3.74e-2; // 3.74 * 10^-2
     double y = -0.825;
     double z = 0.16e2;  // 0.16 * 10^2
-
-    // Разбиваем формулу на части для удобства и избежания ошибок
-    
-    // 1. Числитель первой дроби: 1 + sin^2(x + y)
     double numerator = 1.0 + pow(sin(x + y), 2);
-
-    // 2. Знаменатель первой дроби: |x - 2y / (1 + x^2 * y^2)|
     double denominator = fabs(x - (2.0 * y) / (1.0 + pow(x, 2) * pow(y, 2)));
-
-    // 3. Первая дробь
     double fraction = numerator / denominator;
-
-    // 4. Вторая часть: x^|y|
     double power_part = pow(x, fabs(y));
-
-    // 5. Третья часть: cos^2(arctg(1/z))
-    // В C нет функции arctg, есть atan (арктангенс)
     double cos_part = pow(cos(atan(1.0 / z)), 2);
-
-    // 6. Итоговый результат
     double v = fraction * power_part + cos_part;
-
-    // Вывод результата
     printf("Исходные данные:\n");
     printf("x = %.2e\n", x);
     printf("y = %.3f\n", y);
     printf("z = %.2e\n\n", z);
-    
     printf("Вычисленное значение v = %.4f\n", v);
     printf("Ожидаемое значение   v = 1.0553\n");
-
     return 0;
 }
 #3. Результаты работы программы

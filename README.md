@@ -9,7 +9,8 @@
 5. Конец
 
 ### Блок-схема
-<img width="126" height="1072" alt="лаба 5 drawio" src="https://github.com/user-attachments/assets/0b263527-7faf-4646-bf2c-5b36b3c5b3dd" />
+<img width="126" height="1072" alt="лаба 5 2 drawio" src="https://github.com/user-attachments/assets/580687f3-6658-4df1-a027-a0087ed1a29e" />
+
 
 ```mermarid
     Start((Начало)) --> Init[/Ввод x, y, z/]
